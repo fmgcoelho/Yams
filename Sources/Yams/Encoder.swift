@@ -193,7 +193,7 @@ private struct _UnkeyedEncodingContainer: UnkeyedEncodingContainer {
     // MARK: -
 
     private var currentEncoder: _ReferencingEncoder {
-        defer { encoder.sequence.append("[APPENDED]") }
+        defer { encoder.sequence.append("") }
         return encoder.encoder(at: count)
     }
 }
